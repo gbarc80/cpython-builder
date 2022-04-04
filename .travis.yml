@@ -10,10 +10,6 @@ jobs:
       dist: rhel8
       os: linux
       install:
-      - pushd /opt/pyenv/
-      - git checkout master
-      - git pull
-      - popd
       - python -m pip install virtualenv==20.0.2
     
   allow_failures:
