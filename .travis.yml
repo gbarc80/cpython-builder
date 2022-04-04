@@ -11,10 +11,10 @@ jobs:
       os: linux
       install:
       - pushd /home/travis/.pyenv/
-      - sudo git checkout master
-      - sudo git pull
+      - git checkout master
+      - git pull
       - popd
-      - sudo python -m pip install virtualenv==20.0.2
+      - python -m pip install virtualenv==20.0.2
     
   allow_failures:
     - name: freebsd
