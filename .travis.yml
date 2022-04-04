@@ -9,6 +9,12 @@ jobs:
     - language: minimal
       dist: rhel8
       os: linux
+      install:
+      - pushd /opt/pyenv/
+      - sudo git checkout master
+      - sudo git pull
+      - popd
+      - sudo python -m pip install virtualenv==20.0.2
     
   allow_failures:
     - name: freebsd
