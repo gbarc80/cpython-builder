@@ -10,7 +10,7 @@ jobs:
       dist: rhel8
       os: linux
       install:
-      - pushd /opt/pyenv/
+      - pushd /home/travis/.pyenv/
       - sudo git checkout master
       - sudo git pull
       - popd
